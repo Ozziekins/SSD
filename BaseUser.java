@@ -3,10 +3,12 @@ import java.util.Random;
 public abstract class BaseUser {
     private String name;
     private String email;
+    private String id;
 
     public BaseUser(String name, String email) {
         this.name = name;
         this.email = email;
+        this.id = getID();
     }
 
     public String getName() {
