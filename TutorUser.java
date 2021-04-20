@@ -14,12 +14,17 @@ public class TutorUser extends BaseUser{
     void login() {
     }
 
+
     public int getAverageRating() {
         return this.averageRating;
     }
 
     public int[] getRatings() {
         return this.ratings;
+    }
+
+    public void updateProfile() {
+        System.out.println("Profile updated");
     }
 
     public boolean isRegistered() {
@@ -30,13 +35,10 @@ public class TutorUser extends BaseUser{
         return this.currentStudents;
     }
 
-    public void updateProfile() {
-        System.out.println("Profile updated!");
-    }
-
     public void viewBookings() {
         System.out.println("Bookings:");
     }
+
 
     public void viewDemoRequests() {
         System.out.println("DEmo requests:");
