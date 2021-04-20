@@ -1,3 +1,3 @@
-public enum UserType {
+enum UserType {
     PARENT, TUTOR, ADMIN
 }

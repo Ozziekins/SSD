@@ -2,6 +2,7 @@ public class AdminUser extends BaseUser {
 
     public AdminUser(String name, String email) {
         super(name, email);
+        System.out.println("A new admin user has been created!");
     }
 
     @Override
@@ -17,23 +18,24 @@ public class AdminUser extends BaseUser {
         System.out.println("Tutor profile updated");
     }
 
-    public void addBook() {
+    public void addBook(String book, Library library) {
+        library.addBook(book);
         System.out.println("Book added");
     }
 
     public void viewParents() {
-
+        System.out.println("Parents:");
     }
 
     public void viewTutor() {
-
+        System.out.println("Tutors:");
     }
 
-    public void getParents() {
-
+    public ParentUser getParent(String parentID) {
+        return  null;
     }
 
-    public void getTutor() {
-
+    public TutorUser getTutor(String tutorID) {
+        return null;
     }
 }

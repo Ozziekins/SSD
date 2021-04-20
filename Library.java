@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class Library {
-    String[] books;
+    private String[] books;
 
     public String[] getBooks() {
         return this.books;

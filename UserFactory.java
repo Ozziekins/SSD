@@ -1,6 +1,6 @@
 public class UserFactory {
 
-    public BaseUser createUser(UserType userType, String name, String email) {
+    protected BaseUser createUser(UserType userType, String name, String email) {
         BaseUser nuser = null;
         switch (userType) {
             case PARENT:

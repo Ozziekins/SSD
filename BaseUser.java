@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public abstract class BaseUser {
+abstract class BaseUser {
     private String name;
     private String email;
     private String id;
