@@ -24,7 +24,9 @@ Secondly, using this method, the system would be able to in the future add new k
 
 For our UML, first we created an enum *UserType* to be able to easily switch case between the three different entity kinds during creation. Then we created a BaseUser abstract class as well as concrete classes (ParentUser, TutorUser, AdminUser) that extend the BaseUser abstract class. A factory class UserFactory is then defined and the TutorFinder with the main driver will pass information (Parent|Tutor|Admin) to UserFactory to get the concrete type of object it needs.
 
-![](/home/ozzie_kins/Downloads/UMLProject12-Final.png)
+
+
+<center><image src="https://drive.google.com/uc?export=view&id=1fczcksyZJvvJ4BenV_K3AS-8sRcdBVp5" ></center>
 
 Altogether,
 
