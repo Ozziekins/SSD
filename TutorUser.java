@@ -10,7 +10,7 @@ public class TutorUser extends BaseUser{
     }
 
     public void updateProfile() {
-
+        System.out.println("Profile updated");
     }
 
     public void viewBookings() {
@@ -22,6 +22,6 @@ public class TutorUser extends BaseUser{
     }
 
     public void acceptDemoRequest() {
-
+        System.out.println("Demo request accepted");
     }
 }
