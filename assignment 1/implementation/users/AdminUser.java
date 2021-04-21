@@ -32,7 +32,7 @@ public class AdminUser extends BaseUser {
     }
 
     public ParentUser getParent(String parentID) {
-        return  null;
+        return null;
     }
 
     public TutorUser getTutor(String tutorID) {
