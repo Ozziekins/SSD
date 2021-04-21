@@ -26,7 +26,8 @@ The process for choosing started from us eliminating _Prototype_ from the given 
 
 For our UML, first we created an enum _UserType_ to be able to easily switch case between the three different entity kinds during creation. Then we created a BaseUser abstract class as well as concrete classes (ParentUser, TutorUser, AdminUser) that extend the BaseUser abstract class. We decided to use an Abstract Class and not an Interface to defined the common user functonality because the abstract class allows us to store common data that every user has: id, email, name, etc. A factory class _UserFactory_ is then defined and the TutorFinder with the main driver will pass information (Parent|Tutor|Admin) to _UserFactory_ to get the concrete type of object it needs.
 
-![UML diagram](assignment 1/UMLProject12-Final.png)
+[draw.io](https://drive.google.com/file/d/1s-OACNZJmrj1O9ymWgSvHg7k4Jj9ybIP/view?usp=sharing)
+![UML diagram](UMLProject12-Final.png)
 
 Altogether,
 
@@ -39,6 +40,4 @@ We have two other classes not related to the pattern, but mentioned in the descr
 
 ## Implementation
 
-We implemented the structure illustrated by our UML diagram in java programming language.
-[github](https://github.com/Ozziekins/SSD)
-[draw.io](https://drive.google.com/file/d/1s-OACNZJmrj1O9ymWgSvHg7k4Jj9ybIP/view?usp=sharing)
+We implemented the structure illustrated by our UML diagram in java programming language, hosted on [github](https://github.com/Ozziekins/SSD).
