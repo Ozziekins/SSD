@@ -1,5 +1,3 @@
-import users;
-
 public class UserFactory {
     protected BaseUser createUser(UserType userType, String name, String email) {
         BaseUser nuser = null;

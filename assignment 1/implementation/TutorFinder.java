@@ -1,5 +1,3 @@
-import users;
-
 public class TutorFinder {
     public static void main(String[] args) {
         String name = "Tasnim";
