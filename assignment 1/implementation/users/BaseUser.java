@@ -8,7 +8,7 @@ abstract class BaseUser {
     public BaseUser(String name, String email) {
         this.name = name;
         this.email = email;
-        this.id = getID();
+        this.id = newID();
     }
 
     public String getName() {
@@ -19,7 +19,11 @@ abstract class BaseUser {
         return this.email;
     }
 
-    protected String getID() {
+    public String getID() {
+        return this.id;
+    }
+
+    protected String newID() {
         Random rand = new Random();
         double drandom = rand.nextDouble();
         return Double.toString(drandom);
