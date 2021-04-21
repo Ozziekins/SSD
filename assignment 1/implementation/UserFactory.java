@@ -1,8 +1,6 @@
-public class UserFactory {
-    enum UserType {
-        PARENT, TUTOR, ADMIN
-    }
+import users;
 
+public class UserFactory {
     protected BaseUser createUser(UserType userType, String name, String email) {
         BaseUser nuser = null;
         switch (userType) {
