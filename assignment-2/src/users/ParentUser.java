@@ -1,3 +1,4 @@
+package users;
 public class ParentUser extends UserDecorator {
     private boolean registered;
     private String currentTutor;

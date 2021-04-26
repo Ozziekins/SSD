@@ -1,3 +1,5 @@
+package assets;
+
 import java.time.LocalDateTime;
 import java.util.Random;
 

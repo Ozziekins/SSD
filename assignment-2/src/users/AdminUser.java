@@ -1,3 +1,7 @@
+package users;
+
+import assets.Library;
+
 public class AdminUser extends UserDecorator {
 
     public AdminUser(IUser user) {

@@ -1,3 +1,4 @@
+package users;
 import java.util.Random;
 
 public class User implements IUser {

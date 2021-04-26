@@ -1,3 +1,5 @@
+package assets;
+
 import java.util.Arrays;
 
 public class Library {

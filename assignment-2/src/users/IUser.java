@@ -1,3 +1,4 @@
+package users;
 interface IUser {
     String getName();
 
