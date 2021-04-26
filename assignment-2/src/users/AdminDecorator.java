@@ -2,9 +2,9 @@ package users;
 
 import assets.Library;
 
-public class AdminUser extends UserDecorator {
+public class AdminDecorator extends UserDecorator {
 
-    public AdminUser(IUser user) {
+    public AdminDecorator(IUser user) {
         super(user);
         System.out.println("A new admin user has been created!");
     }
@@ -34,11 +34,11 @@ public class AdminUser extends UserDecorator {
         System.out.println("Tutors:");
     }
 
-    public ParentUser getParent(String parentID) {
+    public ParentDecorator getParent(String parentID) {
         return null;
     }
 
-    public TutorUser getTutor(String tutorID) {
+    public TutorDecorator getTutor(String tutorID) {
         return null;
     }
 }

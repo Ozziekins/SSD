@@ -1,9 +1,9 @@
 package users;
-public class ParentUser extends UserDecorator {
+public class ParentDecorator extends UserDecorator {
     private boolean registered;
     private String currentTutor;
 
-    public ParentUser(IUser user) {
+    public ParentDecorator(IUser user) {
         super(user);
         System.out.println("A new parent user has been created!");
     }
@@ -40,11 +40,11 @@ public class ParentUser extends UserDecorator {
         System.out.println("Books:");
     }
 
-    public TutorUser[] filterTutor() {
+    public TutorDecorator[] filterTutor() {
         return null;
     }
 
-    public TutorUser selectTutor() {
+    public TutorDecorator selectTutor() {
         return null;
     }
 

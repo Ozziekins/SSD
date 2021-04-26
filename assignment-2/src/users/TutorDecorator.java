@@ -1,12 +1,12 @@
 package users;
-public class TutorUser extends UserDecorator {
+public class TutorDecorator extends UserDecorator {
 
     private int[] ratings;
     private int averageRating;
     private boolean registered;
     private String[] currentStudents;
 
-    public TutorUser(IUser user) {
+    public TutorDecorator(IUser user) {
         super(user);
         System.out.println("A new tutor user has been created!");
     }
