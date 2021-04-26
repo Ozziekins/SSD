@@ -1,11 +1,11 @@
 import java.util.Random;
 
-abstract class BaseUser {
+public class User implements IUser {
     private String name;
     private String email;
     private String id;
 
-    public BaseUser(String name, String email) {
+    public User(String name, String email) {
         this.name = name;
         this.email = email;
         this.id = newID();
@@ -29,5 +29,7 @@ abstract class BaseUser {
         return Double.toString(drandom);
     }
 
-    abstract void login();
+    public void login() {
+        System.out.println("A base user did login.");
+    }
 }

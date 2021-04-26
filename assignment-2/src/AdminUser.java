@@ -1,13 +1,12 @@
-public class AdminUser extends BaseUser {
+public class AdminUser extends UserDecorator {
 
-    public AdminUser(String name, String email) {
-        super(name, email);
+    public AdminUser(IUser user) {
+        super(user);
         System.out.println("A new admin user has been created!");
     }
 
-    @Override
-    void login() {
-
+    public void login() {
+        System.out.println("An admin user did login.");
     }
 
     public void registerTutor() {

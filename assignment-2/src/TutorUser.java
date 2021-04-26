@@ -1,19 +1,18 @@
-public class TutorUser extends BaseUser{
+public class TutorUser extends UserDecorator {
 
     private int[] ratings;
     private int averageRating;
     private boolean registered;
     private String[] currentStudents;
 
-    public TutorUser(String name, String email) {
-        super(name, email);
+    public TutorUser(IUser user) {
+        super(user);
         System.out.println("A new tutor user has been created!");
     }
 
-    @Override
-    void login() {
+    public void login() {
+        System.out.println("A tutor user did login.");
     }
-
 
     public int getAverageRating() {
         return this.averageRating;
@@ -38,7 +37,6 @@ public class TutorUser extends BaseUser{
     public void viewBookings() {
         System.out.println("Bookings:");
     }
-
 
     public void viewDemoRequests() {
         System.out.println("DEmo requests:");

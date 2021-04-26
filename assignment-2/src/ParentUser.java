@@ -1,10 +1,9 @@
-public class ParentUser extends BaseUser{
-
+public class ParentUser extends UserDecorator {
     private boolean registered;
     private String currentTutor;
 
-    public ParentUser(String name, String email) {
-        super(name, email);
+    public ParentUser(IUser user) {
+        super(user);
         System.out.println("A new parent user has been created!");
     }
 
@@ -16,8 +15,8 @@ public class ParentUser extends BaseUser{
         return this.currentTutor;
     }
 
-    @Override
-    void login() {
+    public void login() {
+        System.out.println("A parent user did login.");
     }
 
     public void viewTutors() {
