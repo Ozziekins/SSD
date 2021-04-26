@@ -1,5 +1,9 @@
+package assignment1.factory;
+
+import assignment1.users.*;
+
 public class UserFactory {
-    protected BaseUser createUser(UserType userType, String name, String email) {
+    public BaseUser createUser(UserType userType, String name, String email) {
         BaseUser nuser = null;
         switch (userType) {
         case PARENT:

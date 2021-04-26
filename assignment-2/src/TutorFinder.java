@@ -1,7 +1,4 @@
-import users.AdminDecorator;
-import users.ParentDecorator;
-import users.TutorDecorator;
-import users.User;
+import users.*;
 
 public class TutorFinder {
     public static void main(String[] args) {

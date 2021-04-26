@@ -1,3 +1,7 @@
+package assignment1.users;
+
+import assets.Library;
+
 public class AdminUser extends BaseUser {
 
     public AdminUser(String name, String email) {

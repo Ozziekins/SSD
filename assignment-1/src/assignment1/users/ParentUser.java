@@ -1,3 +1,4 @@
+package assignment1.users;
 public class ParentUser extends BaseUser{
 
     private boolean registered;

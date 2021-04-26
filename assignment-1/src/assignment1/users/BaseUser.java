@@ -1,6 +1,7 @@
+package assignment1.users;
 import java.util.Random;
 
-abstract class BaseUser {
+public abstract class BaseUser {
     private String name;
     private String email;
     private String id;
