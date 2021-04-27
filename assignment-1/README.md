@@ -40,4 +40,4 @@ We have two other classes not related to the pattern, but mentioned in the descr
 
 ## Implementation
 
-We implemented the structure illustrated by our UML diagram in java programming language, hosted on [github](https://github.com/Ozziekins/SSD).
+We implemented the structure illustrated by our UML diagram in java programming language, hosted on [github](https://github.com/Ozziekins/SSD/tree/main/assignment-1).
