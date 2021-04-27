@@ -1,4 +1,4 @@
-package assignment1.assets;
+package assets;
 import java.time.LocalDateTime;
 import java.util.Random;
 

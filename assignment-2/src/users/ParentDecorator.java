@@ -1,4 +1,5 @@
 package users;
+
 public class ParentDecorator extends UserDecorator {
     private boolean registered;
     private String currentTutor;

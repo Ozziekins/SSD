@@ -1,4 +1,5 @@
-package assignment1.factory;
+package factory;
+
 public enum UserType {
     PARENT, TUTOR, ADMIN
 }

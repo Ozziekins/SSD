@@ -1,4 +1,5 @@
 package users;
+
 public abstract class UserDecorator implements IUser {
     private IUser user;
 

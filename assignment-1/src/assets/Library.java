@@ -1,4 +1,4 @@
-package assignment1.assets;
+package assets;
 import java.util.Arrays;
 
 public class Library {

@@ -1,5 +1,6 @@
 package users;
-interface IUser {
+
+public interface IUser {
     String getName();
 
     String getEmail();

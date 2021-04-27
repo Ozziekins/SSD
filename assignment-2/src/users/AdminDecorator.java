@@ -1,6 +1,6 @@
 package users;
 
-import assets.Library;
+import assets.*;
 
 public class AdminDecorator extends UserDecorator {
 

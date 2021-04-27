@@ -1,6 +1,6 @@
-package assignment1.factory;
+package factory;
 
-import assignment1.users.*;
+import users.*;
 
 public class UserFactory {
     public BaseUser createUser(UserType userType, String name, String email) {

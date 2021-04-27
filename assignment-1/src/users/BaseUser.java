@@ -1,4 +1,4 @@
-package assignment1.users;
+package users;
 import java.util.Random;
 
 public abstract class BaseUser {

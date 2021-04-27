@@ -1,6 +1,4 @@
-package assignment1;
-
-import assignment1.factory.*;
+import factory.*;
 
 public class TutorFinder {
     public static void main(String[] args) {

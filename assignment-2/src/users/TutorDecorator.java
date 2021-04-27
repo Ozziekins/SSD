@@ -1,4 +1,5 @@
 package users;
+
 public class TutorDecorator extends UserDecorator {
 
     private int[] ratings;

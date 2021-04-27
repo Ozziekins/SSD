@@ -1,4 +1,5 @@
-package assignment1.users;
+package users;
+
 public class TutorUser extends BaseUser{
 
     private int[] ratings;

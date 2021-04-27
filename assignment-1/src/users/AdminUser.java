@@ -1,6 +1,6 @@
-package assignment1.users;
+package users;
 
-import assets.Library;
+import assets.*;
 
 public class AdminUser extends BaseUser {
 
