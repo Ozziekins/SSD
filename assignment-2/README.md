@@ -20,20 +20,19 @@ This private tutor system will help to find tuition teachers from nearby locatio
 
 ## UML diagram
 
-For our UML, first we created an __IUser__ interface and concrete class __User__ implementing the __IUser__ interfae. Then we created an abstract decorator class __UserDecorator__ implementing the __IUser__ interface and having __IUser__ object as its instance variable. __ParentDecorator__, __TutorDecorator__ and __AdminDecorator__ implement __UserDecorator__. Finally our demo class __TutorFinder__ which has the main driver uses __UserDecorator__ to decorate __IUser__
+For our UML, first we created an **IUser** interface and concrete class **User** implementing the **IUser** interfae. Then we created an abstract decorator class **UserDecorator** implementing the **IUser** interface and having **IUser** object as its instance variable. **ParentDecorator**, **TutorDecorator** and **AdminDecorator** implement **UserDecorator**. Finally our demo class **TutorFinder** which has the main driver uses **UserDecorator** to decorate **IUser**
 
 [draw.io](https://drive.google.com/file/d/1bQxJDNtBNOLCxc6o5UPLgUivhAcd1mDs/view?usp=sharing)
 ![UML diagram](uml.png)
 
 Altogether,
 
-1. The interface __IUser__ that has the commo interface for the objects being wrapped and the wrappers
+1. The interface **IUser** that has the commo interface for the objects being wrapped and the wrappers
 2. **User** is the concerete class that implements the interface **IUser** and is the class that is wrapped by the decorators.
-3. We have **UserDecorator** that is the abstract class with the field type of the wrapped object (__user__) same as __IUser__ so that it can create users and decorators.
+3. We have **UserDecorator** that is the abstract class with the field type of the wrapped object (**user**) same as **IUser** so that it can create users and decorators.
 4. Concrete decorator classes: **ParentDecorator**, **TutorDecorator** and **AdminDecorator** which can be used to decorate a user.
 5. The class that has the main driver is the **TutorFinder** class and can wrap users in multiple layers of decorators.
 
-
 ## Implementation
 
-We implemented the structure illustrated by our UML diagram in java programming language, hosted on [github](https://github.com/Ozziekins/SSD/tree/main/assignment-2).  We have two other classes not related to the pattern, but mentioned in the description that we chose to include. The first is the Lecture class that contains information about a single lecture to be created. Second is Library which contains an array of book; where books are stored by their names as strings.
+We implemented the structure illustrated by our UML diagram in java programming language, hosted on [github](https://github.com/Ozziekins/SSD/tree/main/assignment-2). We have two other classes not related to the pattern, but mentioned in the description that we chose to include. The first is the Lecture class that contains information about a single lecture to be created. Second is Library which contains an array of book; where books are stored by their names as strings.
