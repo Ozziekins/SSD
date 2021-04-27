@@ -16,7 +16,14 @@ This private tutor system will help to find tuition teachers from nearby locatio
 
 ### Reason for the choice
 
-...
+The process of selecting a final pattern started with examination of each of the 4 available patterns. _Bridge_ pattern quickly fell off, because we knew we didn't have 2 separate inheritance trees that we would need to link together. _Flyweight_ also felt out of place, since there was nothing on the user part that could have been moved into some common store, i.e. every user's name and email was unique and belonging only to them. The _Composite_
+pattern was of no use as well as we don't have a situation where we would want to treat a user and a group of users uniformly, as a whole entity.
+
+After carefully considering all other patters, we came up with three primary reasons for choosing the decorator pattern:
+
+- First, in our _Tutor finding system_, if we have a situation where a user who is an admin is also a parent, we want to be able to transparently and dynamically add the parent responsibilities to an admin user entity without affecting other user objects.
+- Secondly, following the same logic mentioned above, the same way we want to be able to add other responsibilities to the user object, we may also want to change it in the future. The decorator pattern allows for a flexible changing mechanism.
+- Finally, the decorator pattern allowed us to avoid using the impractical method of sub-classing; such that we don't need to create many other classes like: _AdminParent_, _AdminTeacher_, _ParentTeacher_, etc. Instead of such static implementation, decorator allows us to extend the functionalities in a dynamic and easier way.
 
 ## UML diagram
 
