@@ -1,6 +1,6 @@
 package handlers;
 
-public class AuthenticationHandler extends BaseHandler implements Handler {
+public class AuthenticationHandler extends BaseHandler {
     public void handle(Request request) {
         System.out.println("AuthenticationHandler Triggered");
         if (request.sender.isLoggedIn()) {

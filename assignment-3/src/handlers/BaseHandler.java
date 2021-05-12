@@ -1,6 +1,6 @@
 package handlers;
 
-public class BaseHandler {
+public class BaseHandler implements Handler {
     private Handler next;
 
     public void setNext(Handler handler) {
