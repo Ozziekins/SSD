@@ -1,6 +1,5 @@
 import assets.Book;
 import assets.Library;
-import assets.Parameter;
 import users.*;
 import handlers.*;
 
@@ -26,7 +25,7 @@ public class TutorFinder {
         Library library = new Library(books);
 
         Book newBook = new Book("Living rivers");
-        List<Parameter> parameters = new ArrayList<>();
+        List<Object> parameters = new ArrayList<>();
         parameters.add(newBook);
         parameters.add(library);
 

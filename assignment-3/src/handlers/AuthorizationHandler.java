@@ -1,7 +1,5 @@
 package handlers;
 
-import users.User;
-
 public class AuthorizationHandler extends BaseHandler implements Handler {
     public void handle(Request request) {
         System.out.println("AuthorizationHandler Triggered");

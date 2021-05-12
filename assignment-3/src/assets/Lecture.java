@@ -3,7 +3,7 @@ package assets;
 import java.time.LocalDateTime;
 import java.util.Random;
 
-public class Lecture extends Parameter {
+public class Lecture {
     private String lectureID;
     private LocalDateTime dateTime;
     private int duration;

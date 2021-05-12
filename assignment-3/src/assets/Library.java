@@ -2,7 +2,7 @@ package assets;
 
 import java.util.List;
 
-public class Library extends Parameter{
+public class Library {
     private List<Book> books;
 
     public List<Book> getBooks() {
@@ -12,6 +12,7 @@ public class Library extends Parameter{
     public Library(List<Book> books) {
         this.books = books;
     }
+
     public void addBook(Book book) {
         this.books.add(book);
     }

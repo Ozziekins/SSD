@@ -1,7 +1,5 @@
 package handlers;
 
-import users.User;
-
 public class BaseHandler {
     private Handler next;
 
