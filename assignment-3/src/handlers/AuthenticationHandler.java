@@ -1,3 +1,5 @@
+package handlers;
+
 import users.User;
 
 public class AuthenticationHandler extends BaseHandler implements Handler {
