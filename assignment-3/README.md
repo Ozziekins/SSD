@@ -16,7 +16,7 @@ This private tutor system will help to find tuition teachers from nearby locatio
 
 ### Reason for the choice
 
-The process of selecting a final pattern started with
+The process of selecting a final pattern began with a deep understanding of the project requirements. Our project emphasized on how different users could access, manage and interact with resources. While certain users are allowed to carry out certain operations, other users should not be able to do so. The pattern we are to use should be able to pass request through some sort of handlers, these handlers are to be executed on the request to make sure that the passed request is valid for the given user. This use case is perfect to be implemented using the Chain of responsibility behavioural design pattern.
 
 In our system in particular, what we aimed to achieve is to take each incoming request from a user, first verify that this user is loggen in. Then check the user role and that they have the right permission to carry out request and finally ensure that the object at the receiving end of the request exists. Intuitively, it looks like this:
 ![intuitive understanding](flow.png)
@@ -32,8 +32,11 @@ Altogether,
 
 1. The interface _Handler_ is common for the concrete handlers.
 2. _BaseHandler_ is the concerete class that implements the interface _Handler_.
-3. Concrete decorator classes: _AuthenticationHandler_, _AuthorizationHandler_ and _ValidationHandler_ which carry out their appropriate checks.
-4. The class that has the main driver is the _TutorFinder_ class and creates the users which can perform requests that will go through all checks in our chain of responsibility.
+3. Concrete handler classes: _AuthenticationHandler_, _AuthorizationHandler_ and _ValidationHandler_ which carry out their appropriate checks.
+4. The class that has the main driver is the _TutorFinder_ class and creates the users which can perform requests that will go through all checks in our chain of responsibility.  
+5. The _Action_ enum holds all actions (operations) possible in our system
+6. The _Request_ class simulate possible actions made by certain users in our system and also holds the parameters needed to execute the stated action
+7. Finally, the _Response_ call keeps track of the status of the request object and a corresponding message.
 
 > Due to the fact that the focus of this assignment is behaviour and not creation or structure, we did not focus on the pattern used to create the users. This was covered in earlier assignments, and that is the reason for illustrating the users as simple boxes.
 
