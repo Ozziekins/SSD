@@ -1,8 +1,5 @@
 package handlers;
-
 import users.User;
-
-import java.util.List;
 
 public class Response {
     private boolean status;
