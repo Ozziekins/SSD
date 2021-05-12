@@ -3,9 +3,9 @@ package handlers;
 import assets.*;
 import users.Admin;
 
-public class ExistenceHandler extends BaseHandler implements Handler {
+public class ValidationHandler extends BaseHandler {
     public void handle(Request request) {
-        System.out.println("ExistenceHandler Triggered");
+        System.out.println("ValidationHandler Triggered");
         // Verify type then cast
         Book book = (Book) request.parameters.get(0);
         Library library = (Library) request.parameters.get(1);

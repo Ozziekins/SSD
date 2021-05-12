@@ -15,7 +15,7 @@ public class TutorFinder {
 
         Handler h1 = new AuthenticationHandler();
         Handler h2 = new AuthorizationHandler();
-        Handler h3 = new ExistenceHandler();
+        Handler h3 = new ValidationHandler();
 
         h1.setNext(h2);
         h2.setNext(h3);

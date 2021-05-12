@@ -23,7 +23,7 @@ In our system in particular, what we aimed to achieve is to take each incoming r
 
 ## UML diagram
 
-For our UML, first we created an interface _Handler_ that is common for all concrete handlers. It possesses the main method _handle_ that handles a user request, as well as a method to set the next handler. Next is the class _BaseHandler_ that implements the interface and it is responsible for setting the next handler. Then we have three concrete handlers: _AuthenticationHandler_, _AuthorizationHandler_ and _ExistenceHandler_. They inherit from the class _BaseHandler_ and each have their own responsibility of checking if the user is logged in, the user permission and the existence of the request receiver respectively.
+For our UML, first we created an interface _Handler_ that is common for all concrete handlers. It possesses the main method _handle_ that handles a user request, as well as a method to set the next handler. Next is the class _BaseHandler_ that implements the interface and it is responsible for setting the next handler. Then we have three concrete handlers: _AuthenticationHandler_, _AuthorizationHandler_ and _ValidationHandler_. They inherit from the class _BaseHandler_ and each have their own responsibility of checking if the user is logged in, the user permission and the existence (validity) of the request receiver respectively.
 
 [draw.io](https://drive.google.com/file/d/1M4ot91Q7X28JM0xkW9K-pERs3s9-h3Nr/view?usp=sharing)
 ![UML diagram](uml.png)
@@ -32,7 +32,7 @@ Altogether,
 
 1. The interface _Handler_ is common for the concrete handlers.
 2. _BaseHandler_ is the concerete class that implements the interface _Handler_.
-3. Concrete decorator classes: _AuthenticationHandler_, _AuthorizationHandler_ and _ExistenceHandler_ which carry out their appropriate checks.
+3. Concrete decorator classes: _AuthenticationHandler_, _AuthorizationHandler_ and _ValidationHandler_ which carry out their appropriate checks.
 4. The class that has the main driver is the _TutorFinder_ class and creates the users which can perform requests that will go through all checks in our chain of responsibility.
 
 > Due to the fact that the focus of this assignment is behaviour and not creation or structure, we did not focus on the pattern used to create the users. This was covered in earlier assignments, and that is the reason for illustrating the users as simple boxes.
