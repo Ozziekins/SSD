@@ -16,7 +16,7 @@ This private tutor system will help to find tuition teachers from nearby locatio
 
 ### Reason for the choice
 
-The process of selecting a final pattern started with  
+The process of selecting a final pattern started with
 
 In our system in particular, what we aimed to achieve is to take each incoming request from a user, first verify that this user is loggen in. Then check the user role and that they have the right permission to carry out request and finally ensure that the object at the receiving end of the request exists. Intuitively, it looks like this:
 ![intuitive understanding](flow.png)
@@ -33,9 +33,9 @@ Altogether,
 1. The interface _Handler_ is common for the concrete handlers.
 2. _BaseHandler_ is the concerete class that implements the interface _Handler_.
 3. Concrete decorator classes: _AuthenticationHandler_, _AuthorizationHandler_ and _ExistenceHandler_ which carry out their appropriate checks.
-4. The class that has the main driver is the _TutorFinder_ class and creates the users which can perform requests that will go through all checks in our chain of responsibility.     
+4. The class that has the main driver is the _TutorFinder_ class and creates the users which can perform requests that will go through all checks in our chain of responsibility.
 
-> Due to the fact that the focus of this assignment is behaviour and not creation  or structure, we did not focus on the pattern used to create the users. This was covered in earlier assignments, and that is the reason for illustrating the users as simple boxes.  
+> Due to the fact that the focus of this assignment is behaviour and not creation or structure, we did not focus on the pattern used to create the users. This was covered in earlier assignments, and that is the reason for illustrating the users as simple boxes.
 
 ## Implementation
 
