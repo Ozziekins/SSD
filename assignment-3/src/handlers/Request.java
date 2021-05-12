@@ -15,24 +15,24 @@ public class Request {
         this.parameters = parameters;
     }
 
-    User getSender() {
+    public User getSender() {
         return this.sender;
     }
 
-    Action getAction() {
+    public Action getAction() {
         return this.action;
     }
 
-    List<Object> getParameters() {
+    public List<Object> getParameters() {
         return this.parameters;
     }
 
-    Response getResponse() {
+    public Response getResponse() {
         return this.response;
     }
 
-    void setResponse(Response response) {
-        this.response = response;
+    public void setResponse(boolean status, String message) {
+        this.response = new Response(status, message);
     }
 
 }

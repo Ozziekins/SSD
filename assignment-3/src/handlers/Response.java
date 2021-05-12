@@ -1,5 +1,4 @@
 package handlers;
-import users.User;
 
 public class Response {
     private boolean status;
@@ -10,6 +9,6 @@ public class Response {
         this.message = message;
     }
 
-    boolean getStatus() { return this.status; }
-    String getMessage() { return this.message; }
+    public boolean getStatus() { return this.status; }
+    public String getMessage() { return this.message; }
 }

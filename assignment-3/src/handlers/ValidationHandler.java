@@ -7,13 +7,13 @@ public class ValidationHandler extends BaseHandler {
     public void handle(Request request) {
         System.out.println("ValidationHandler Triggered");
         // Verify type then cast
-        Book book = (Book) request.parameters.get(0);
-        Library library = (Library) request.parameters.get(1);
+        Book book = (Book) request.getParameters().get(0);
+        Library library = (Library) request.getParameters().get(1);
 
         if (!library.isPresent(book)) {
-            Admin adminUser = (Admin) request.sender;
+            Admin adminUser = (Admin) request.getSender();
             adminUser.addBook(book, library);
-            request.response = "Book Added Successfully";
+            request.setResponse(true, "Book Added Successfully");
             super.handle(request);
         }
     }

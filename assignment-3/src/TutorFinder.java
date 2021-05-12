@@ -29,9 +29,8 @@ public class TutorFinder {
         parameters.add(newBook);
         parameters.add(library);
 
-        String response = "";
-        Request request = new Request(admin1, Action.HandleAddBook, parameters, response);
+        Request request = new Request(admin1, Action.HandleAddBook, parameters);
         h1.handle(request);
-        System.out.println(request.response);
+        System.out.println(request.getResponse().getMessage());
     }
 }
